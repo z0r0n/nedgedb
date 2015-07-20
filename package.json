@@ -1,0 +1,56 @@
+{
+  "name": "nedgedb",
+  "description": "node module for openedge database with nosql interface",
+  "version": "1.0.46",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/z0r0n/nedgedb.git"
+  },
+  "contributors": [
+    {
+      "name": "Suresh Santhanam",
+      "email": "msureshsanthanam@gmail.com"
+    },
+    {
+      "name": "Puneeth Manyam",
+      "email": "puneethmanyam@gmail.com"
+    },
+    {
+      "name": "Mohit Dubey",
+      "email": "[insert email here]@gmail.com"
+    }
+  ],
+  "directories": {
+    "lib": "."
+  },
+  "scripts": {
+    "install": "node-gyp configure rebuild"
+  },
+  "gypfile": true,
+  "gitHead": "9f648c22752bd36d14f9c1e8ba04998a9371d42e",
+  "bugs": {
+    "url": "https://github.com/z0r0n/nedgedb/issues"
+  },
+  "homepage": "https://github.com/z0r0n/nedgedb#readme",
+  "_id": "nedgedb@1.0.46",
+  "_shasum": "5fc0421d260bfc7308ad2effb4b25db9e65d0f12",
+  "_from": "nedgedb@*",
+  "_npmVersion": "2.9.1",
+  "_nodeVersion": "0.12.3",
+  "_npmUser": {
+    "name": "navspeak",
+    "email": "navneet.sahay@gmail.com"
+  },
+  "dist": {
+    "shasum": "5fc0421d260bfc7308ad2effb4b25db9e65d0f12",
+    "tarball": "http://registry.npmjs.org/nedgedb/-/nedgedb-1.0.46.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "navspeak",
+      "email": "navneet.sahay@gmail.com"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/nedgedb/-/nedgedb-1.0.46.tgz"
+}
