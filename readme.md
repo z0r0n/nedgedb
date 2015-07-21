@@ -43,7 +43,7 @@ db.connectSync(function(err,res){
 	}
 	else{
 		console.log("\nConnected Successfully");
-		collection = new db.collection("table_name");
+		collection = db.collection("table_name");
 	}
 });
 
@@ -80,7 +80,7 @@ db.disconnectSync(function(err,res){
 var nedgedb = require('nedgedb');
 var db =new nedgedb.database("dsn_name","user_name","password");
 
-var collection = new db.collection("table_name");
+var collection = db.collection("table_name");
 
 db.connect(function(err){
 	if(err){
@@ -132,7 +132,7 @@ var nedgedb = require('nedgedb');
 
 var db =new nedgedb.database("mydsn","pmanyam","");
 
-var collection = new db.collection("customer");
+var collection = db.collection("customer");
 
 
 query = { "CustNum" : { "$eq" : 22222}  };
@@ -244,7 +244,7 @@ var nedgedb = require('nedgedb');
 
 var db = new nedgedb.database("dsn_name","user_name","password");
 
-var collection = new db.collection("table_name");
+var collection = db.collection("table_name");
 
 var print_res = function(err,res){
 	if(err){
