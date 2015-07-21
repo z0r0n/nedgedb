@@ -27,6 +27,7 @@ Prodb copies a database to your user
 prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
 ```
 ## Sample Programs
+### Note : 
 ### Sync Implementation
 ```javascript
 var nedgedb = require('nedgedb');
@@ -77,9 +78,9 @@ db.disconnectSync(function(err,res){
 ### Async Implementation
 ```javascript
 var nedgedb = require('nedgedb');
-var db =new nedgedb.database("mydsn","pmanyam","");
+var db =new nedgedb.database("dsn_name","user_name","password");
 
-var collection = new db.collection("customer");
+var collection = new db.collection("table_name");
 
 db.connect(function(err){
 	if(err){
@@ -95,8 +96,12 @@ db.connect(function(err){
 				4.limit		(SQL_limit)
 				5.callback  (A cursor to records is returned if the callback is not used)
 				If the callback is not given it everything in find happens in Sync(similar to findSync)
+				
+			If query is an empty json, all records are selected ans similarly for list
+			If order is an empty json, the sotring will be based on primary key
+			If the limit is negative then all the records are fetched
 		*/
-		collection.find({},[],{},100,function(err,res){
+		collection.find({},[],{},-1,function(err,res){
 			if(err){
 				throw err;
 			}
