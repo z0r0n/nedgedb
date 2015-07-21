@@ -17,7 +17,8 @@ Requires installed unixODBC
   * Proper odbc configuration, follow the steps here to correctly configure your odbc installation
     * http://knowledgebase.progress.com/articles/Article/P21252
     
-## Sample Program
+## Sample Programs
+#Sync Implementation
 ```javascript
 var nedgedb = require('nedgedb');
 
