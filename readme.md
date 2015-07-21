@@ -16,9 +16,18 @@ Requires installed unixODBC
   * Fedora/Red Hat/CentOS `$ sudo yum install unixODBC unixODBC-devel libtool-ltdl libtool-ltdl-devel`
   * Proper odbc configuration, follow the steps here to correctly configure your odbc installation
     * http://knowledgebase.progress.com/articles/Article/P21252
-    
+
+## Configuring OpenEdge
+*proserve starts the openedge on a specific portnumber with your username
+```bash
+proserve "databasename" -S "portnumber" -H "username 
+```
+*prodb copies a database to your user
+```bash
+prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
+```
 ## Sample Programs
-###Sync Implementation
+### Sync Implementation
 ```javascript
 var nedgedb = require('nedgedb');
 
@@ -65,7 +74,7 @@ db.disconnectSync(function(err,res){
 });
 
 ```
-###ASync Implementation
+### Async Implementation
 ```javascript
 var nedgedb = require('nedgedb');
 var db =new nedgedb.database("mydsn","pmanyam","");
@@ -111,7 +120,7 @@ db.connect(function(err){
 
 console.log("\nConnect is Async\n");
 ```
-###ASync CRUD Implementation
+### Async CRUD Implementation
 ```javascript
 //Async Crud Implementation
 var nedgedb = require('nedgedb');
