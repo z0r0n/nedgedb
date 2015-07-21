@@ -27,7 +27,7 @@ Prodb copies a database to your user
 prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
 ```
 ## Sample Programs
-### Note : 
+##### Note : Replace the dnn_name, user_name, password and table_name in the following sample programs with the actual credentials of your openedge database
 ### Sync Implementation
 ```javascript
 var nedgedb = require('nedgedb');
@@ -242,9 +242,9 @@ console.log("\nConnecting Asynchronously\n");
 //Cursor Implementation
 var nedgedb = require('nedgedb');
 
-var db = new nedgedb.database("mydsn","pmanyam","");
+var db = new nedgedb.database("dsn_name","user_name","password");
 
-var collection = new db.collection("customer");
+var collection = new db.collection("table_name");
 
 var print_res = function(err,res){
 	if(err){
