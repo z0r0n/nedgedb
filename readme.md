@@ -18,11 +18,11 @@ Requires installed unixODBC
     * http://knowledgebase.progress.com/articles/Article/P21252
 
 ## Configuring OpenEdge
-*proserve starts the openedge on a specific portnumber with your username
+Proserve starts the openedge on a specific port number with your username
 ```bash
 proserve "databasename" -S "portnumber" -H "username 
 ```
-*prodb copies a database to your user
+Prodb copies a database to your user
 ```bash
 prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
 ```
