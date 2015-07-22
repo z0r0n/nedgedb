@@ -32,7 +32,7 @@ prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
 ```javascript
 var nedgedb = require('nedgedb');
 
-var db = new nedgedb.database("dsn_name","user_name","password");  // Fourth attribute is the schema name which is taken as PUB by default
+var db = new nedgedb.database("dsn_name","user_name","password");  // Fourth attribute is the schema name which is taken as PUB by default.Give an empty string as the fourth attribute for using without any schema name
 
 var records=[];
 var collection;
