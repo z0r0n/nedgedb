@@ -1,7 +1,7 @@
 {
   "name": "nedgedb",
   "description": "node module for openedge database with nosql interface",
-  "version": "1.0.46",
+  "version": "1.0.54",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -33,18 +33,18 @@
     "url": "https://github.com/z0r0n/nedgedb/issues"
   },
   "homepage": "https://github.com/z0r0n/nedgedb#readme",
-  "_id": "nedgedb@1.0.46",
-  "_shasum": "5fc0421d260bfc7308ad2effb4b25db9e65d0f12",
+  "_id": "nedgedb@1.0.4",
+  "_shasum": "f802a40461bb552191ce5352f57897bb816020fc",
   "_from": "nedgedb@*",
-  "_npmVersion": "2.9.1",
-  "_nodeVersion": "0.12.3",
+  "_npmVersion": "2.11.2",
+  "_nodeVersion": "0.12.6",
   "_npmUser": {
     "name": "navspeak",
     "email": "navneet.sahay@gmail.com"
   },
   "dist": {
-    "shasum": "5fc0421d260bfc7308ad2effb4b25db9e65d0f12",
-    "tarball": "http://registry.npmjs.org/nedgedb/-/nedgedb-1.0.46.tgz"
+    "shasum": "1b95968548c611480f2126b0420be890cfbea15b",
+    "tarball": "http://registry.npmjs.org/nedgedb/-/nedgedb-1.0.0.tgz"
   },
   "maintainers": [
     {
@@ -52,5 +52,6 @@
       "email": "navneet.sahay@gmail.com"
     }
   ],
-  "_resolved": "https://registry.npmjs.org/nedgedb/-/nedgedb-1.0.46.tgz"
+  "_resolved": "https://registry.npmjs.org/nedgedb/-/nedgedb-1.0.0.tgz",
+  "readme": "readme.md"
 }

@@ -2,7 +2,7 @@
 var nedgedb = require('nedgedb');
 
 var db = new nedgedb.database("mydsn","pmanyam","");    //creating a db object with dsn_name="mydsn" username="pmanyam"  and without a password
-
+														//Fourth attribute is the schema name which is taken as PUB by default
 var records=[];
 var collection;
 
@@ -12,7 +12,7 @@ db.connectSync(function(err,res){
 	}
 	else{
 		console.log("\nConnected Successfully");
-		collection = new db.collection("customer");         //creating a collection object which basically can access the table "customers"
+		collection = db.collection("customer");         //creating a collection object which basically can access the table "customers"
 	}
 });
 
