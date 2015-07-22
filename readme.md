@@ -2,9 +2,7 @@
 Node module for Progress OpenEdge database with nosql front end interface.
 
 ## Description
-This node library helps you perform CRUD operations on OpenEdge Database both synchronuosly or asynchronously. The node 
-module communicates with the ODBC drivers installed which in turn fetches records from the database. The records are 
-fetched as JSON objects. 
+This library helps you perform CRUD operations on OpenEdge Database both synchronuosly or asynchronously from a node.js application. The node module communicates with the ODBC drivers installed which in turn fetches records from the database as JSON objects.
 
 ## Installation
 ```bash
@@ -18,16 +16,18 @@ Requires installed unixODBC
     * http://knowledgebase.progress.com/articles/Article/P21252
 
 ## Configuring OpenEdge
-Proserve starts the openedge on a specific port number with your username
+Set progress environment by the command proenv.
+Prodb creates a database.
+Proserve starts the OpenEdge database on a specific port number
 ```bash
-proserve "databasename" -S "portnumber" -H "username 
-```
-Prodb copies a database to your user
-```bash
+proenv
 prodb "databasename_to_be_copied" "databasename_to_be_copied_to"
+proserve "databasename" -S "portnumber"
 ```
+We would be required to use prodb only for the first time. 
+
 ## Sample Programs
-##### Note : Replace the dnn_name, user_name, password and table_name in the following sample programs with the actual credentials of your openedge database
+##### Note : Replace the dsn_name, user_name, password and table_name in the following sample programs with the actual credentials of your openedge database
 ### Sync Implementation
 ```javascript
 var nedgedb = require('nedgedb');
@@ -125,7 +125,7 @@ db.connect(function(err){
 
 console.log("\nConnect is Async\n");
 ```
-### Async CRUD Implementation
+### Async CRUD Operations
 ```javascript
 //Async Crud Implementation
 var nedgedb = require('nedgedb');
