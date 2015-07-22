@@ -1,4 +1,4 @@
-# nedgedb
+# Nedgedb
 Node module for Progress OpenEdge database with nosql front end interface.
 
 ## Description
@@ -130,9 +130,9 @@ console.log("\nConnect is Async\n");
 //Async Crud Implementation
 var nedgedb = require('nedgedb');
 
-var db =new nedgedb.database("mydsn","pmanyam","");
+var db =new nedgedb.database("dsn_name","user_name","password");
 
-var collection = db.collection("customer");
+var collection = db.collection("table_name");
 
 
 query = { "CustNum" : { "$eq" : 22222}  };
