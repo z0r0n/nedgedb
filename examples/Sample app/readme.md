@@ -1,5 +1,5 @@
-Following node packages are required for running this Sample app
+####Following node packages are required for running this Sample app
 
---> express
---> body-parser
---> nedgedb
+######--> nedgedb       (npm install nedgedb)
+######--> express       (npm install express)
+######--> body-parser   (npm install body-parser)
