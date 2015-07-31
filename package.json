@@ -1,7 +1,7 @@
 {
   "name": "nedgedb",
   "description": "node module for openedge database with nosql interface",
-  "version": "1.0.58",
+  "version": "1.0.59",
   "main": "index.js",
   "repository": {
     "type": "git",
