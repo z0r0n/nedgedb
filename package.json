@@ -1,7 +1,7 @@
 {
   "name": "nedgedb",
   "description": "node module for openedge database with nosql interface",
-  "version": "1.0.59",
+  "version": "1.0.6",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -55,6 +55,5 @@
       "email": "navneet.sahay@gmail.com"
     }
   ],
-  "_resolved": "https://registry.npmjs.org/nedgedb/-/nedgedb-1.0.56.tgz",
-  "readme": "ERROR: No README data found!"
+  "_resolved": "https://registry.npmjs.org/nedgedb/-/nedgedb-1.0.56.tgz"
 }
