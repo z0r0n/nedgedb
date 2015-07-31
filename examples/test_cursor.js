@@ -15,14 +15,13 @@ var print_res = function(err,res){
 	}
 }
 
-db.connectSync(function(err){
-	if(err){
-		throw err;
-	}
-	else{
-		console.log("\nConnected Successfully\n");
-	}
-});
+var err = db.connectSync();
+if(err){
+	throw err;
+}
+else{
+	console.log("\nConnected Successfully\n");
+}
 
 /*
 	If the callback was not provided for the collection.find or collection.findSync a cursor to the records is returned
@@ -59,11 +58,10 @@ cursor.next(4);
 cursor.record(print_res);
 
 
-db.disconnectSync(function(err){
-	if(err){
-		throw err;
-	}
-	else{
-		console.log("\nDisconnectred Successfully\n");
-	}
-});
+err = db.disconnectSync()
+if(err){
+	throw err;
+}
+else{
+	console.log("\nDisconnectred Successfully\n");
+}

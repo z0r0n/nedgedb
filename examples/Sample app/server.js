@@ -59,14 +59,13 @@ app.put('/showrecords/:id', function (req, res) {
 
 var server = app.listen(8888,function(){
 	console.log("Connection initializing . . . . ");
-	db.connectSync(function(err){
-		if(err){
-			throw err;
-		}
-		else{
-			console.log("Connection established");
-		}
-	});
+	var err = db.connectSync();
+	if(err){
+		throw err;
+	}
+	else{
+		console.log("Connection established");
+	}
 
 	console.log("Server listening at %s", server.address().port);
 });	
