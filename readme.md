@@ -1,3 +1,8 @@
+Note - 
+This version was written for nodeJs 0.12.0 and is since not being updated. 
+This module does not work with latest node versions. 
+
+
 # nedgedb
 Node module for Progress OpenEdge database with nosql front end interface.
 
